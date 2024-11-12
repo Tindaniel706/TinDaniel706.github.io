@@ -31,7 +31,7 @@ model-viewer {
   transform: translate3d(-50%, -50%, 0);
   border-radius: 25px;
   box-shadow: 0px 3px 10px 3px rgba(52, 83, 99), 0px 0px 5px 1px rgba(52, 83, 95);
-  border: 1px solid rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(0, 153, 153);
   background-color: rgba(52, 80, 99);
 }
 
@@ -67,7 +67,7 @@ model-viewer {
   height: 36px;
   line-height: 36px;
   border-radius: 18px;
-  border: 1px solid #DADCE0;
+  border: 1px solid #cc99ff;
 }
 
 #ar-button:active {
@@ -79,7 +79,7 @@ model-viewer {
 }
 
 #ar-button:focus-visible {
-  outline: 1px solid #4285f4;
+  outline: 1px solid #669999;
 }
 
 @keyframes circle {
