@@ -1,0 +1,273 @@
+/* style.css */
+:root {
+    /* --- PALETTE COLORI (Modifica qui) --- */
+    --bg-color: #1f0230;          /* Viola scuro profondo (Sfondo) */
+    --card-bg: rgba(20, 10, 40, 0.7); /* Sfondo semitrasparente per elementi */
+    
+    --accent-orange: #ff9e00;     /* Arancione Neon */
+    --accent-blue: #00d4ff;       /* Blu Cyber */
+    --accent-teal: #00ff9d;       /* Verde Acqua */
+    --accent-purple: #bd00ff;     /* Viola acceso */
+
+    --text-color: #c3d5d7;        /* Colore testo principale */
+    --font-main: 'OnePlus-Sans', 'Josefin-Sans';
+    --font-alt: 'OnePlusSans-Bold';
+
+    /* --- IMPOSTAZIONI STRUTTURALI --- */
+    /* Modifica questa variabile per cambiare la lunghezza scrollabile della pagina */
+    --page-total-height: 150vh; 
+    
+    /* Dimensione del cerchio nella barra */
+    --circle-size: 140px;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-main);
+    min-height: var(--page-total-height);
+    background-image: linear-gradient(180deg, var(--bg-color) 0%, #1a0b2e 100%);
+    position: relative;
+}
+
+/* --- BARRA SUPERIORE --- */
+.top-bar {
+    background: rgba(92, 7, 145, 0.9);
+    border-bottom: 2px solid var(--accent-purple);
+    backdrop-filter: blur(10px);
+    height: 100px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 20px rgba(189, 0, 255, 0.3);
+    gap: 15px;
+}
+
+/* Nasconde ciò che esce dai bordi */
+.ticker-wrap {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* Definisce il movimento infinito */
+.ticker-move {
+    display: inline-block;
+    padding-left: 100%;
+    animation: ticker-animation 20s linear infinite;
+    padding-top: 33px;
+}
+
+
+
+@keyframes ticker-animation {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+.Paragrafo {
+    color:#00ff9d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+
+    
+    
+
+    
+}
+
+.Titolo{
+    color:#00ff9d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 25px;
+    font-family: var(--font-alt);
+
+}
+
+.nav-text p {
+    margin: 0;                 
+    font-size: 0.95rem;           
+    color: #bd8036;
+    font-family: var(--font-main);
+    font-weight: bold;               
+}
+
+/* Cerchio diviso a metà */
+.split-circle {
+    width: var(--circle-size);
+    height: var(--circle-size);
+    border-radius: 50%;
+    border: 3px solid var(--accent-blue);
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    box-shadow: 0 0 15px var(--accent-blue);
+    background-color: #000;
+}
+
+.circle-half {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.circle-half img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.circle-half.left { border-right: 1px solid var(--accent-blue); }
+.circle-half.right { border-left: 1px solid var(--accent-blue); }
+
+/* --- LISTA PARALLELEPIPEDI --- */
+.tech-list-container {
+    margin-top: 50px;
+}
+
+.tech-row {
+    background: var(--card-bg);
+    border: 1px solid var(--accent-teal);
+    margin-bottom: 15px;
+    padding: 15px;
+    /* Effetto parallelepipedo leggermente inclinato sui bordi o trasformazione */
+    transform: skewX(-10deg); 
+    transition: all 0.2s ease;
+    box-shadow: 5px 5px 0px rgba(0, 255, 157, 0.1);
+}
+
+.tech-row:hover {
+    box-shadow: 0 0 15px var(--accent-teal);
+    transform: skewX(-7deg) translateX(2px);
+    background: rgba(0, 255, 157, 0.05);
+}
+
+/* Raddrizziamo il contenuto interno affinché non sia storto come il contenitore */
+.tech-row > .row {
+    transform: skewX(7deg); 
+}
+
+.row-logo {
+    width: 50px;
+    height: 50px;
+    border: 2px solid var(--accent-orange);
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+/* --- SPAZI GRANDI IMMAGINI --- */
+.big-image-frame {
+    border: 2px solid var(--accent-orange);
+    height: 710px; /* Altezza fissa per il frame */
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 30px;
+    box-shadow: 0 0 20px rgba(255, 158, 0, 0.2);
+}
+.verybig-image-frame {
+    border: 2px solid var(--accent-orange);
+    height: 500px; /* Altezza fissa per il frame */
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 5px;
+    box-shadow: 0 0 20px rgba(255, 158, 0, 0.2);
+}
+
+
+.big-image-frame::before {
+    /* Elemento decorativo futuristico agli angoli */
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 20px; height: 20px;
+    border-top: 5px solid var(--accent-orange);
+    border-left: 5px solid var(--accent-orange);
+    z-index: 2;
+}
+
+.big-image-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: contrast(1.1) brightness(0.9);
+    transition: transform 0.5s ease;
+}
+
+.big-image-frame:hover img {
+    transform: scale(1.05);
+}
+
+/* --- FOOTER --- */
+.footer-section {
+    background: rgba(0,0,0,0.8);
+    border-top: 1px solid var(--accent-blue);
+    margin-top: 50px;
+    padding: 40px 0;
+}
+
+.footer-desc {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #ccc;
+    border-left: 4px solid var(--accent-purple);
+    padding-left: 15px;
+}
+
+.tech-links {
+    list-style: none;
+    padding: 0;
+}
+
+.tech-links li {
+    margin-bottom: 10px;
+}
+
+.tech-links a {
+    color: var(--accent-teal);
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+.tech-links a:hover {
+    color: var(--accent-orange);
+    text-shadow: 0 0 10px var(--accent-orange);
+}
+
+/* Utility per il testo */
+h2 { color: var(--accent-blue); text-transform: uppercase; letter-spacing: 2px; }
+
+
+.josefin-sans{
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+ 
+}
+
+@font-face {
+    font-family: 'OnePlus-Sans'; 
+    src: url('fontlocali/OnePlusSans-Regular.ttf') format('truetype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OnePlusSans-Bold'; 
+    src: url('fontlocali/OnePlusSans-Bold.ttf') format('truetype'); 
+    font-weight: 700;
+    font-style: normal;
+}

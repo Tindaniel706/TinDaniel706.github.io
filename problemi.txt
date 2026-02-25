@@ -1,0 +1,10 @@
+1) troppa poca ram per caricare il modello pesante, va a finire nel page file e carica dopo 3 minuti
+
+
+3) non funzionano i modelli di gen immagini int8, va capito dalla console
+
+4) DEVO FARE IL CAZZO DI SITO
+
+5) automatizzazzione dual boot con grub non presente
+
+6) devo mettere il minimonitor

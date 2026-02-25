@@ -1,27 +1,176 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <title>&lt; future arm 3D showcase&gt; by Dany</title>
-    <meta charset="utf-8">
-    <meta name="description" content="&lt;its&gt; the arm">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link type="text/css" href="./styles.css" rel="stylesheet"/>
-  </head>
-  <body>
-    <!-- <model-viewer> HTML element -->
-    <model-viewer src="3Dmodel-complete.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1">
-      <div class="progress-bar hide" slot="progress-bar">
-          <div class="update-bar"></div>
-      </div>
-      <button slot="ar-button" id="ar-button">
-          View in your IRL space (buggy, will probably be removed)
-      </button>
-      <div id="ar-prompt">
-          <img src="AR.png">
-      </div>
-    </model-viewer>  
-    <script src="script.js"></script>
-    <!-- Loads <model-viewer> for browsers: -->
-    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentazione Pc Custom di Dani</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="stile.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="top-bar">
+	 <div class="nav-text left-text">
+        <p>  Da una parte WIN11 LTSC per acesso a INTEL AI PLAYGROUND  e i più potenti modelli locali..</p>
+    </div>
+        <div class="split-circle">
+            <div class="circle-half left">
+                <img src="immagini/win2.png" alt="Logo Sx">
+            </div>
+            <div class="circle-half right">
+                <img src="immagini/linux2.png" alt="Logo Dx">
+            </div>
+        </div>
+		 <div class="nav-text left-text">
+           <p> Dall'altra, Linux Arch (Cachy Os) configurato per trasformarlo in una console da gaming pronta all'uso.</p>
+         </div>
+    </nav>
+	<div class="ticker-wrap border-top py-2">
+    <div class="ticker-move">
+        <span class="text-info fw-bold mx-4">MIGLIOR MODELLO DI LINGUAGGIO ESEGUIBILE AL MOMENTO: MISTRAL V3 2501 24B INSTRUCT	  MIGLIOR MODELLO GENERATIVO ESEGUIBILE AL MOMENTO: Juggernaut x9 Prossimo step: Implementazione dei riconoscimento vocale in tempo reale -- Prezzi crisi aggiornati al 25/02/2026</p>
+	</span>
+    </div>
+	</div>
+		<nav class="Titolo"> <h1> ___OVERVIEW DEL PROGETTO___ </h1> </nav>
+	<nav class="Paragrafo"> <p> Progetto pc figo non so che scrivere devo mettere tutto questo a caso per avere testo bello or some shit </p> </nav>
+    <div class="container my-5">
+        
+        <h2 class="mb-4">SPECIFICHE HARDWARE  -------------------------  PREZZI (PRIMA E DOPO CRISI)</h2>
+        <div class="tech-list-container">
+
+            <div class="tech-row">
+                <div class="row align-items-center">
+                    <div class="col-2 col-md-1">
+                        <img src="immagini/chip.png" class="row-logo" alt="Icon">
+                    </div>
+                    <div class="col-4 col-md-3">AMD Ryzen 3600 + Prism Stock Cooler</div>
+                    <div class="col-3 col-md-3 text-end text-danger">PROCESSORE e DISSIPATORE</div>
+                    <div class="col-3 col-md-3 text-end">67,99 Euro</div>
+                    <div class="col-md-2 d-none d-md-block text-warning">98,91 Euro</div>
+                </div>
+            </div>
+            <div class="tech-row">
+                <div class="row align-items-center">
+                    <div class="col-2 col-md-1"><img src="immagini/gpu.png" class="row-logo" alt="Icon"></div>
+                    <div class="col-4 col-md-3">SPARKLE ROC Intel Arc A770 16gb</div>
+                    <div class="col-3 col-md-3 text-end text-info">SCHEDA VIDEO</div>
+                    <div class="col-3 col-md-3 text-end">199,99 Euro</div>
+                    <div class="col-md-2 d-none d-md-block text-warning">315,99 Euro</div>
+                </div>
+            </div>
+
+            <div class="tech-row">
+                <div class="row align-items-center">
+                    <div class="col-2 col-md-1"><img src="immagini/ram.png" class="row-logo" alt="Icon"></div>
+                    <div class="col-4 col-md-3">8gbx2 DDR4 2666mhz</div>
+                    <div class="col-3 col-md-3 text-end text-warning">RAM</div>
+                    <div class="col-3 col-md-3 text-end"> 23 Euro (USATA)</div>
+                    <div class="col-md-2 d-none d-md-block text-danger">NAN</div>
+                </div>
+            </div>
+
+            <div class="tech-row">
+                <div class="row align-items-center">
+                    <div class="col-2 col-md-1"><img src="immagini/ssd.png" class="row-logo" alt="Icon"></div>
+                    <div class="col-4 col-md-3">Netac Nvme 3.0 SSD 256gb</div>
+                    <div class="col-3 col-md-3 text-end text-success">MEMORIA DI ARCHIVIAZIONE</div>
+                    <div class="col-3 col-md-3 text-end">28,99 Euro</div>
+                    <div class="col-md-2 d-none d-md-block text-danger">NAN</div>
+                </div>
+            </div>
+            <div class="tech-row">
+                <div class="row align-items-center">
+                    <div class="col-2 col-md-1"><img src="immagini/mobo.png" class="row-logo" alt="Icon"></div>
+                    <div class="col-4 col-md-3">Asrock x570pro micro atx</div>
+                    <div class="col-3 col-md-3 text-end text-success">SCHEDA MADRE</div>
+                    <div class="col-3 col-md-3 text-end">75 Euro (USATA)</div>
+                    <div class="col-md-2 d-none d-md-block text-danger">NAN</div>
+                </div>
+            </div>
+            <div class="tech-row">
+                <div class="row align-items-center">
+                    <div class="col-2 col-md-1"><img src="immagini/psu.png" class="row-logo" alt="Icon"></div>
+                    <div class="col-4 col-md-3">Msi Mag A650BN</div>
+                    <div class="col-3 col-md-3 text-end text-success">ALIMENTATORE</div>
+                    <div class="col-3 col-md-3 text-end">54,99 Euro</div>
+                    <div class="col-md-2 d-none d-md-block text-warning">65,50 Euro</div>
+                </div>
+            </div>
+			<div class="tech-row">
+                <div class="row align-items-center">
+                    <div class="col-2 col-md-1"><img src="immagini/case.png" class="row-logo" alt="Icon"></div>
+                    <div class="col-4 col-md-3">Mars Gaming MC-C1000 NON Rgb</div>
+                    <div class="col-3 col-md-3 text-end text-success">CASE CUSTOMIZZATO</div>
+                    <div class="col-3 col-md-3 text-end">28,99 Euro</div>
+                    <div class="col-md-2 d-none d-md-block text-danger">NAN</div>
+                </div>
+            </div>
+
+        </div>
+
+        <hr class="my-5" style="border-color: var(--accent-blue);">
+
+        <h2 class="mb-4">GALLERIA IMMAGINI</h2>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="big-image-frame">
+                    <img src="immagini/Img1.jpg" alt="Immagine1">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="big-image-frame">
+                    <img src="Immagini/Img2.jpg" alt="Immagine2">
+                </div>
+            </div>
+			<div class="col-lg-6">
+                <div class="big-image-frame">
+                    <img src="Immagini/Img3.jpg" alt="Immagine3">
+                </div>
+            </div>
+			<div class="col-lg-6">
+                <div class="big-image-frame">
+                    <img src="Immagini/Img4.jpg" alt="Immagine4">
+                </div>
+            </div>
+			<div class="row-lg-6">
+                <div class="verybig-image-frame">
+                    <img src="Immagini/Img5.jpg" alt="Immagine5">
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h3 style="color: var(--accent-orange)">Altre Informazioni</h3>
+                    <p class="footer-desc">
+                        Questo è un progetto non di proprieta`, ma ispirato dalle attività svolte durante la mia permanenza come studente e mentor al progetto H.O.P.E (Hands on Physics Experience) negli anni 2024,25 e 26. Lo ho completamente finanziato e realizzato da solo, adattandolo al feedback ricevuto dai miei amici e da alcuni studenti e professori che ci hanno fatto visita dall'MIT di Boston.   
+                        I loghi dei sistemi operativi e dei componenti mostrati in questo sito appartengono ai loro rispettivi creatori, insieme al font "OnePlus-Sans" utilizzato. <br> -Daniele Giardinieri 5I As 2025/2026 A.Labriola   /    Liceo Scientifico sezione Scienze Applicate
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h4 style="color: var(--accent-teal)">Link Correlati</h4>
+                    <ul class="tech-links">
+                        <li><a href="https://www.liceoroiti.edu.it/pagine/hope-with-mit---hands-on-physics" target="_blank">> PROGETTO H.O.P.E</a></li>
+                        <li><a href="https://linktr.ee/TinDaniel706" target="_blank">> I MIEI SOCIAL</a></li>
+                        <li><a href="https://www.liceolabriola.edu.it/wp-content/uploads/2025/01/PPT-Hope-per-il-sito-.pdf" target="_blank">> SITO DELLA SCUOLA</a></li>
+                        <li><a href="paginesecondarie/cred.html"> > PAGINA CREDITI RISORSE</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
